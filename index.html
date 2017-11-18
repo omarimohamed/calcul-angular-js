@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular JS - cours & exercice</title>
+    <style media="screen">
+          table{
+            margin: auto;
+            margin-top: 100px;
+          }
+          button , input{
+            font-size: 80px;
+            text-align: center;
+            width: 98%;
+          }
+          td{
+            text-align: center;
+          }
+    </style>
+  </head>
+  <body>
+
+    <div ng-controller="ctrl1">
+        <table border="1">
+            <tr>
+              <td colspan="5"><input type="text" ng-model="variable"></td>
+            </tr>
+            <tr>
+                <td><button type="button" ng-click="addvaleur(1)">1</button></td>
+                <td><button type="button" ng-click="addvaleur(2)">2</button></td>
+                <td><button type="button" ng-click="addvaleur(3)">3</button></td>
+                <td><button type="button" ng-click="addvaleur('+')">+</button></td>
+                <td><button type="button" ng-click="init()">C</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" ng-click="addvaleur(4)">4</button></td>
+                <td><button type="button" ng-click="addvaleur(5)">5</button></td>
+                <td><button type="button" ng-click="addvaleur(6)">6</button></td>
+                <td><button type="button" ng-click="addvaleur('-')">-</button></td>
+                <td><button type="button" ng-click="addvaleur('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" ng-click="addvaleur(7)">7</button></td>
+                <td><button type="button" ng-click="addvaleur(8)">8</button></td>
+                <td><button type="button" ng-click="addvaleur(9)">9</button></td>
+                <td><button type="button" ng-click="addvaleur('/')">/</button></td>
+                <td><button type="button" ng-click="calculer()">=</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- angular js import  -->
+    <script src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
